@@ -17,9 +17,9 @@ public class ConfigServerApplication {
 		SpringApplication.run(ConfigServerApplication.class, args);
 	}
 	
-	@GetMapping("/")
-	public String home() {
-		return "Hello from Config Server Application !!";
+	@GetMapping("/healthCheck/status")
+	public String healthCheckStatus() {
+		return "Config Server Application is RUNNING...";
 	}
 	
 	
